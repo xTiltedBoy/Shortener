@@ -20,7 +20,7 @@ public class Main {
     public static void main(String[] args) throws LoginException, InterruptedException {
 
         builder = JDABuilder
-                .createDefault("MTA0NDc3MTM4MzA2ODA2OTg5MA.GDhP_r.TzRyomlRy-PbaACMX9Sm8ZTZw66qn3e4GVaoNw")
+                .createDefault("token")
                 .addEventListeners(new shorten());
         builder
                 .setStatus(OnlineStatus.DO_NOT_DISTURB)
