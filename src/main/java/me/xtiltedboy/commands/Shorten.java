@@ -5,10 +5,9 @@ import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEve
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.jetbrains.annotations.NotNull;
 
-import javax.swing.*;
 import java.awt.*;
 
-public class shorten extends ListenerAdapter {
+public class Shorten extends ListenerAdapter {
 
     public void onSlashCommandInteraction(@NotNull SlashCommandInteractionEvent event) {
 
