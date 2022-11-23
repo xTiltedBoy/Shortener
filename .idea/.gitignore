@@ -6,5 +6,4 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-# Ignore files .env
-D:\Informatica por mi cuenta\Java\Shortener\Shortener\src\main\java\me\xtiltedboy\token.env
+../src/main/java/me/xtiltedboy/secrets/

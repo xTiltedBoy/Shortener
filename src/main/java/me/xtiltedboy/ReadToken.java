@@ -7,7 +7,7 @@ public class ReadToken {
     final private String token;
 
         //Abrimos el archivo
-        File archive = new File("D:\\Informatica por mi cuenta\\Java\\Shortener\\Shortener\\src\\main\\java\\me\\xtiltedboy\\token.env");
+        File archive = new File("D:\\Informatica por mi cuenta\\Java\\Shortener\\Shortener\\src\\main\\java\\me\\xtiltedboy\\secrets\\token.env");
         FileReader fr;
 
     {
