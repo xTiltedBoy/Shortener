@@ -34,7 +34,11 @@ public class Main {
 
         //Añadimos el comando shorten
         shardman.getGuildById("1044782214409371738").upsertCommand("shorten", "Crea un enlace acortado")
-                .addOption(OptionType.STRING, "url", "url que desea acortar", true).queue();
+                .addOption(OptionType.STRING, "url", "URL que desea acortar", true).queue();
+
+        //Añadimos el comando help
+        shardman.getGuildById("1044782214409371738").upsertCommand("help", "Muestra la ayuda del bot").queue();
+
 
     }
 }

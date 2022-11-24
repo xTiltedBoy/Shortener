@@ -7,7 +7,7 @@ public class ReadToken {
     //Declaramos la constante token
     private static String token = null;
 
-    public static String getToken(){
+    public static String getToken() {
 
         //Abrimos el archivo
         File archive = new File("C:\\Users\\migue\\IdeaProjects\\Shortener\\src\\main\\java\\me\\xtiltedboy\\secrets\\token.env");

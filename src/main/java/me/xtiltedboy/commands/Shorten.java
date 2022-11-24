@@ -16,7 +16,7 @@ public class Shorten extends ListenerAdapter {
 
             if (event.getOption("url").getAsString().length() < 7) {
                 EmbedBuilder embed = new EmbedBuilder()
-                        .setTitle("Shorter URL")
+                        .setTitle("Shorter URL - " + event.getUser().getName())
                         .setDescription("Url no válida")
                         .setColor(new Color(252, 3, 3, 255));
                 event.replyEmbeds(embed.build()).queue();
@@ -28,14 +28,14 @@ public class Shorten extends ListenerAdapter {
 
             if (protocolNotSecure.equals("http://") || protocolSecure.equals("https://")) {
                 EmbedBuilder embed = new EmbedBuilder()
-                        .setTitle("Shorter URL")
+                        .setTitle("Shorter URL - " + event.getUser().getName())
                         .setDescription("Original URL -> " + event.getOption("url").getAsString()
                                 + "\nShorter URL -> https://shortener.tech/" + GenerateCode.getRandomCode(4))
                         .setColor(new Color(3, 107, 252));
                 event.replyEmbeds(embed.build()).queue();
             } else {
                 EmbedBuilder embed = new EmbedBuilder()
-                        .setTitle("Shorter URL")
+                        .setTitle("Shorter URL - " + event.getUser().getName())
                         .setDescription("Url no válida")
                         .setColor(new Color(252, 3, 3, 255));
                 event.replyEmbeds(embed.build()).queue();
