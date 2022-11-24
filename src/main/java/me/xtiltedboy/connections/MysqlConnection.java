@@ -1,6 +1,6 @@
 package me.xtiltedboy.connections;
 
-public class Database {
+public class MysqlConnection {
 
 
 

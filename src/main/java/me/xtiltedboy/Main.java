@@ -16,13 +16,13 @@ public class Main {
 
     public static JDA shardman;
     public static JDABuilder builder;
-    static ReadToken token = new ReadToken();
+
 
     public static void main(String[] args) throws LoginException, InterruptedException {
 
         //Definimos los atributos del bot
         builder = JDABuilder
-                .createDefault(token.getToken())
+                .createDefault(ReadToken.getToken())
                 .addEventListeners(new Shorten());
         builder
                 .setStatus(OnlineStatus.DO_NOT_DISTURB)

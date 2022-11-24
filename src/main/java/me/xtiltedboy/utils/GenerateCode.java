@@ -4,24 +4,21 @@ import java.util.Random;
 
 public class GenerateCode {
 
-    private String code = "";
+    //Declaro la bateria de caracteres
+    private static String characters = "abcdefghijklmnopqrstuvwxyz"
+            + "ABCDEFGHIJKLMNPQRSTUVWXYZ"
+            + "0123456789";
+    private static Random random = new Random();
 
-    public GenerateCode() {
+    public static String getRandomCode(int lenth){
         //Genero el code
+        String code = "";
 
-        int i;
-        for (i=1; i<=4; i++){
-            //Declaro la bateria de caracteres
-            String characters = "abcdefghijklmnopqrstuvwxyz"
-                    + "ABCDEFGHIJKLMNPQRSTUVWXYZ"
-                    + "0123456789";
-            Random random = new Random();
+        for (int i=1; i<=lenth; i++){
             int randomIndex = random.nextInt(characters.length());
             code += characters.charAt(randomIndex);
         }
-    }
 
-    public String getCode() {
         return code;
     }
 }
